@@ -1,1 +1,126 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tal Yankovitz - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: center;
+            color: #003366;
+        }
+
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #003366;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .bio, .contact-info, .publications {
+            margin: 20px 0;
+            color: #666;
+        }
+
+        .bio p, .contact-info p, .publications ul {
+            margin: 0;
+        }
+
+        .contact-info h2, .publications h2 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .publications ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .publications li {
+            margin: 10px 0;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #003366;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .header img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="tal-photo.jpeg" alt="Tal Yankovitz">
+            <h1>Tal Yankovitz</h1>
+        </div>
+        <div class="bio">
+            <p>Hello! I am a Ph.D. student in Computer Science at Tel Aviv University. I'm very fortunate to be advised by <a href="http://gilcohen.org" target="_blank">Gil Cohen</a>. My research interests are within Theoretical Computer Science and include Error Correcting Codes and Complexity Theory.</p>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p>Email: talyankovitz at mail.tau.ac.il</p>
+        </div>
+        <div class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://eccc.weizmann.ac.il/report/2024/090/" target="_blank"><strong>A Study of Error Reduction Polynomials
+</strong></a>, Gil Cohen, Dean Doron, Tomer Manket, Edward Pyne, Yichuan Wang, Tal Yankovitz
+, manuscript.</li>
+
+                <li><a href="https://eccc.weizmann.ac.il/report/2024/036/" target="_blank"><strong>A stronger bound for linear 3-LCC</strong></a>, Tal Yankovitz, FOCS 2024.</li>
+
+                <li><a href="https://eccc.weizmann.ac.il/report/2023/110/" target="_blank"><strong>Asymptotically-Good RLCCs with (log n)^(2+o(1)) Queries</strong></a>, Gil Cohen, Tal Yankovitz, CCC 2024.</li>
+
+                <li><a href="https://eccc.weizmann.ac.il/report/2022/045/" target="_blank"><strong>Relaxed Locally Decodable and Correctable Codes: Beyond Tensoring
+</strong></a>, Gil Cohen, Tal Yankovitz, FOCS 2022.</li>
+
+                <li><a href="https://eccc.weizmann.ac.il/report/2021/136/" target="_blank"><strong>LCC and LDC: Tailor-Made Distance Amplification and a Refined Separation
+</strong></a>, Gil Cohen, Tal Yankovitz, ICALP 2022.</li>
+
+                <li><a href="https://eccc.weizmann.ac.il/report/2021/154/" target="_blank"><strong>Explicit Binary Tree Codes with Sub-Logarithmic Size Alphabet
+</strong></a>, Inbar Ben Yaacov, Gil Cohen, Tal Yankovitz, STOC 2022.</li>
+                <li><a href="https://eccc.weizmann.ac.il/report/2020/084/" target="_blank"><strong>Rate Amplification and Query-Efficient Distance Amplification for linear LCC and LDC
+</strong></a>, Gil Cohen, Tal Yankovitz, CCC 2021.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
