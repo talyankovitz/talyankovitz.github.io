@@ -73,6 +73,25 @@
             border-radius: 4px;
         }
 
+        .publications li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .publications li a:hover {
+            text-decoration: underline;
+        }
+
+        .publications .authors, .publications .journal {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .publications .journal {
+            color: #333; /* Darker color for journal text */
+        }
+
         @media (max-width: 600px) {
             .header img {
                 width: 100px;
@@ -101,24 +120,41 @@
         <div class="publications">
             <h2>Publications</h2>
             <ul>
-                <li><a href="https://eccc.weizmann.ac.il/report/2024/090/" target="_blank"><strong>A Study of Error Reduction Polynomials
-</strong></a>, Gil Cohen, Dean Doron, Tomer Manket, Edward Pyne, Yichuan Wang, Tal Yankovitz
-, manuscript.</li>
-
-                <li><a href="https://eccc.weizmann.ac.il/report/2024/036/" target="_blank"><strong>A stronger bound for linear 3-LCC</strong></a>, Tal Yankovitz, FOCS 2024.</li>
-
-                <li><a href="https://eccc.weizmann.ac.il/report/2023/110/" target="_blank"><strong>Asymptotically-Good RLCCs with (log n)^(2+o(1)) Queries</strong></a>, Gil Cohen, Tal Yankovitz, CCC 2024.</li>
-
-                <li><a href="https://eccc.weizmann.ac.il/report/2022/045/" target="_blank"><strong>Relaxed Locally Decodable and Correctable Codes: Beyond Tensoring
-</strong></a>, Gil Cohen, Tal Yankovitz, FOCS 2022.</li>
-
-                <li><a href="https://eccc.weizmann.ac.il/report/2021/136/" target="_blank"><strong>LCC and LDC: Tailor-Made Distance Amplification and a Refined Separation
-</strong></a>, Gil Cohen, Tal Yankovitz, ICALP 2022.</li>
-
-                <li><a href="https://eccc.weizmann.ac.il/report/2021/154/" target="_blank"><strong>Explicit Binary Tree Codes with Sub-Logarithmic Size Alphabet
-</strong></a>, Inbar Ben Yaacov, Gil Cohen, Tal Yankovitz, STOC 2022.</li>
-                <li><a href="https://eccc.weizmann.ac.il/report/2020/084/" target="_blank"><strong>Rate Amplification and Query-Efficient Distance Amplification for linear LCC and LDC
-</strong></a>, Gil Cohen, Tal Yankovitz, CCC 2021.</li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2024/090/" target="_blank"><strong>A Study of Error Reduction Polynomials</strong></a>
+                    <span class="authors">Gil Cohen, Dean Doron, Tomer Manket, Edward Pyne, Yichuan Wang, Tal Yankovitz</span>
+                    <span class="journal">Manuscript</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2024/036/" target="_blank"><strong>A stronger bound for linear 3-LCC</strong></a>
+                    <span class="authors">Tal Yankovitz</span>
+                    <span class="journal">FOCS 2024</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2023/110/" target="_blank"><strong>Asymptotically-Good RLCCs with (log n)^(2+o(1)) Queries</strong></a>
+                    <span class="authors">Gil Cohen, Tal Yankovitz</span>
+                    <span class="journal">CCC 2024</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2022/045/" target="_blank"><strong>Relaxed Locally Decodable and Correctable Codes: Beyond Tensoring</strong></a>
+                    <span class="authors">Gil Cohen, Tal Yankovitz</span>
+                    <span class="journal">FOCS 2022</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2021/136/" target="_blank"><strong>LCC and LDC: Tailor-Made Distance Amplification and a Refined Separation</strong></a>
+                    <span class="authors">Gil Cohen, Tal Yankovitz</span>
+                    <span class="journal">ICALP 2022</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2021/154/" target="_blank"><strong>Explicit Binary Tree Codes with Sub-Logarithmic Size Alphabet</strong></a>
+                    <span class="authors">Inbar Ben Yaacov, Gil Cohen, Tal Yankovitz</span>
+                    <span class="journal">STOC 2022</span>
+                </li>
+                <li>
+                    <a href="https://eccc.weizmann.ac.il/report/2020/084/" target="_blank"><strong>Rate Amplification and Query-Efficient Distance Amplification for linear LCC and LDC</strong></a>
+                    <span class="authors">Gil Cohen, Tal Yankovitz</span>
+                    <span class="journal">CCC 2021</span>
+                </li>
             </ul>
         </div>
     </div>
